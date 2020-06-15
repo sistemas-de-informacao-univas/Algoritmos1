@@ -1,0 +1,34 @@
+4. Crie um programa que armazene 10 números digitados pelo usuário em dois vetores: um somente para números pares, e outro somente para números ímpares.
+Após, exiba os valores dos dois vetores na tela, em sequência.
+
+algoritmo "Vetores_Questao_4"
+
+Var
+   Par : vetor [1..10] de inteiro
+   Impar : vetor [1..10] de inteiro
+   num, i : inteiro
+
+Inicio
+
+   para i de 1 ate 10 faca
+
+      escreval("Digite um número:")
+      leia(num)      
+      se (num % 2 = 0 ) entao
+         Par[i] <- num
+      senao
+         Impar[i] <- num
+      fimse
+   fimpara
+   escreval()
+   escreval("Resultados:")
+   escreval("Valores Pares:")
+   para i de 1 ate 10 faca
+         escreval(Par[i])
+   fimpara
+   escreval()
+   escreval("Valores Ímpares:")
+   para i de 1 ate 10 faca
+         escreval(Impar[i])
+   fimpara
+Fimalgoritmo
