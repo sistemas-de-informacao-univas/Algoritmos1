@@ -1,0 +1,27 @@
+2. Escreva um algoritmo que solicite ao usuário a entrada de 5 nomes, e que exiba a lista desses nomes na tela.
+Após exibir essa lista, o programa deve mostrar também os nomes na ordem inversa em que o usuário os digitou, um por linha.
+
+algoritmo "Vetores_Questao_2"
+Var
+nomes : vetor [1..5] de caractere
+i : inteiro
+
+Inicio
+para i de 1 ate 5 faca
+   escreval("Entre com um nome:")
+   leia(nomes[i])
+fimpara
+
+escreval()
+escreval("Os nomes digitados foram:")
+
+para i de 1 ate 5 faca
+   escreval(nomes[i])
+fimpara
+escreval()
+
+escreval("Os nomes digitados em ordem inversa foram:")
+para i de 5 ate 1 passo - 1 faca
+   escreval(nomes[i])
+fimpara
+Fimalgoritmo
