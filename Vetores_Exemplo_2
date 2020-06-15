@@ -10,13 +10,13 @@ i : inteiro
 
 inicio
       para i<-1 ate 10 faca
-		   escreva("Informe o nome da pessoa ",i)
+	   escreva("Informe o nome da pessoa ",i)
            leia(nomes[i])
       fimpara
       
       para i<-10 ate 1 passo -1 faca
- 		   escreval(nomes[i])
- 		fimpara
+ 	   escreval(nomes[i])
+      fimpara
 fimalgoritmo
 
 ---------------------------------------------------------------------------------
@@ -31,11 +31,11 @@ i : inteiro
 
 inicio
       para i<-1 ate 10 faca
-		   escreva("Informe o nome da pessoa ",i)
+	   escreva("Informe o nome da pessoa ",i)
            leia(nomes[i])
       fimpara
 
       para i<-1 ate 10 faca
- 		   escreval(nomes[10-i])
- 		fimpara
+ 	   escreval(nomes[10-i])
+      fimpara
 fimalgoritmo
