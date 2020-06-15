@@ -1,0 +1,41 @@
+Exemplo 2: Escreva um algoritmo que leia 10 nomes para o vetor NOMES e mostre os nomes em ordem inversa da entrada.
+
+SOLUÇÃO 1)
+
+algoritmo "vetor_2"
+
+var
+nomes : vetor[1..10] de caracter
+i : inteiro
+
+inicio
+      para i<-1 ate 10 faca
+		   escreva("Informe o nome da pessoa ",i)
+           leia(nomes[i])
+      fimpara
+      
+      para i<-10 ate 1 passo -1 faca
+ 		   escreval(nomes[i])
+ 		fimpara
+fimalgoritmo
+
+---------------------------------------------------------------------------------
+
+SOLUÇÃO 2)
+
+algoritmo "vetor_2"
+
+var
+nomes : vetor[1..10] de caracter
+i : inteiro
+
+inicio
+      para i<-1 ate 10 faca
+		   escreva("Informe o nome da pessoa ",i)
+           leia(nomes[i])
+      fimpara
+
+      para i<-1 ate 10 faca
+ 		   escreval(nomes[10-i])
+ 		fimpara
+fimalgoritmo
