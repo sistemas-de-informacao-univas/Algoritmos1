@@ -1,0 +1,22 @@
+Exemplo 1: Escreva um algoritmo que faça a leitura de 2 vetores A e B com valores inteiros, 
+em seguida mostre a soma dos valores do vetor A com o vetor B nas mesmas posições.
+
+algoritmo "vetor_1"
+
+var
+A : vetor[1..10] de inteiro
+B : vetor[1..10] de inteiro
+i : inteiro
+
+inicio
+      para i<-1 ate 10 faca
+		   escreval("Informe o valor do vetor A na posição ",i)
+         leia(A[i])
+		   escreval("Informe o valor do vetor B na posição ",i)
+		   leia(B[i])
+      fimpara
+      
+      para i<-1 ate 10 faca
+ 		   escreval("A soma dos valores da posição ", i , " é ",A[i] + B[i])
+ 		fimpara
+fimalgoritmo
