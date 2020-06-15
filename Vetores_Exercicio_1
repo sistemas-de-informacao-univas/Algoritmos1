@@ -1,0 +1,22 @@
+1. Escreva um algoritmo que solicite ao usuário a entrada de 5 números, e que exiba o somatório desses números na tela. Após exibir a soma, o programa deve mostrar também os números que o usuário digitou, um por linha.
+
+algoritmo "Vetores_Questao_1"
+Var
+numeros : vetor [1..5] de inteiro
+i, soma : inteiro
+
+Inicio
+para i de 1 ate 5 faca
+   escreval("Entre com um número:")
+   leia(numeros[i])
+   soma <- soma + numeros[i]
+fimpara
+
+escreval("A soma dos números é", soma)
+escreval()
+
+escreval("Os números digitados foram:")
+para i de 1 ate 5 faca
+   escreval(numeros[i])
+fimpara
+Fimalgoritmo
