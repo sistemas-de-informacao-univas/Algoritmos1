@@ -1,0 +1,22 @@
+3. Crie um programa que solicite a entrada de 10 números pelo usuário, armazenando-os em um vetor, e então monte outro vetor com os valores do primeiro multiplicados por 5.
+Exiba os valores dos dois vetores na tela, simultaneamente, em duas colunas (um em cada coluna), uma posição por linha.
+
+algoritmo "Vetores_Questao_3"
+Var
+nums1 : vetor [1..10] de inteiro
+nums2 : vetor [1..10] de inteiro
+i : inteiro
+Inicio
+
+para i de 1 ate 10 faca
+   escreval("Digite um número:")
+   leia(nums1[i])
+   nums2[i] <- nums1[i] * 5
+fimpara
+escreval()
+escreval("Resultado:")
+para i de 1 ate 10 faca
+   escreval(nums1[i], " ", nums2[i])
+fimpara
+escreval()
+Fimalgoritmo
