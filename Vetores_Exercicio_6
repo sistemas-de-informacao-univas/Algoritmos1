@@ -1,0 +1,42 @@
+6. Modifique novamente o programa anterior, de modo a não exibir na saída os números zero que são mostrados para todas as posições que não receberam nenhum valor durante a atribuição (e portanto estão vazias).
+
+algoritmo "Vetores_Questao_6"
+Var
+   Par : vetor [1..10] de inteiro
+   Impar : vetor [1..10] de inteiro
+   num, i : inteiro
+
+Inicio
+
+   para i de 1 ate 10 faca
+
+      escreval("Digite um número:")
+      leia(num)
+      
+      enquanto num=0 faca
+         escreval("Não permitido zero, Digite um número:")
+         leia(num)
+      fimenquanto
+      
+      se (num % 2 = 0 ) entao
+         Par[i] <- num
+      senao
+         Impar[i] <- num
+      fimse
+   fimpara
+   escreval()
+   escreval("Resultados:")
+   escreval("Valores Pares:")
+   para i de 1 ate 10 faca
+      se Par[i] <> 0 entao
+         escreval(Par[i])
+      fimse
+   fimpara
+   escreval()
+   escreval("Valores Ímpares:")
+   para i de 1 ate 10 faca
+      se Impar[i] <> 0 entao
+         escreval(Impar[i])
+      fimse
+   fimpara
+Fimalgoritmo
