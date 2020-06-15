@@ -1,0 +1,38 @@
+5. Modifique o programa anterior para não aceitar a entrada do número zero, e requisitar a digitação de outro número neste caso.
+
+algoritmo "Vetores_Questao_5"
+Var
+   Par : vetor [1..10] de inteiro
+   Impar : vetor [1..10] de inteiro
+   num, i : inteiro
+
+Inicio
+
+   para i de 1 ate 10 faca
+
+      escreval("Digite um número:")
+      leia(num)
+      
+      enquanto num=0 faca
+         escreval("Não permitido zero, Digite um número:")
+         leia(num)
+      fimenquanto
+      
+      se (num % 2 = 0 ) entao
+         Par[i] <- num
+      senao
+         Impar[i] <- num
+      fimse
+   fimpara
+   escreval()
+   escreval("Resultados:")
+   escreval("Valores Pares:")
+   para i de 1 ate 10 faca
+         escreval(Par[i])
+   fimpara
+   escreval()
+   escreval("Valores Ímpares:")
+   para i de 1 ate 10 faca
+         escreval(Impar[i])
+   fimpara
+Fimalgoritmo
